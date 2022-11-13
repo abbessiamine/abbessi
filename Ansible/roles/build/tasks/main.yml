@@ -1,4 +1,4 @@
 ---
 
 - name: Ping all servers
-  shell: ng build
+  shell: ng build --prod
