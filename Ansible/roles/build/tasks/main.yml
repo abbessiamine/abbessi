@@ -1,0 +1,4 @@
+---
+# tasks file for buil
+        -name: build app
+         shell: ng build --prod
