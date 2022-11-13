@@ -10,6 +10,7 @@ pipeline {
 				url:'https://github.com/abbessiamine/abbessi.git']]])
             }
 			}
+			}
 		stage('Build') {
 		     steps {
 			    script{
@@ -19,6 +20,6 @@ pipeline {
 				}
 				
         
-    }
+    
 	}
 	}
