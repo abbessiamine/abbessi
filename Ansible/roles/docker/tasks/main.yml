@@ -2,7 +2,7 @@
 # tasks file for docke
 - name: create image docker
   docker_image:
-    name: lcangular:latest
+    name: lcimage:latest
     build:
      path: /var/lib/jenkins/workspace/CD_Project
      pull: no
@@ -12,7 +12,7 @@
 - name: run container docker
   docker_container:
     name: myappcontainer
-    image: lcangular:latest
+    image: lcimage:latest
     state: started
     recreate: true
     ports:
