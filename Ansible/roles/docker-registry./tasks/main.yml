@@ -1,2 +1,13 @@
 ---
-# tasks file for docker-registry.
+# tasks file for docker-registry
+- name: Log into DockerHub
+  docker_login:
+    username: abbessi
+    password: miminoude97
+- name: Push to docker hub
+  docker_image:
+    name: lcimage
+    repository: abbessiamine/abbessi
+    tag: latest
+    source: local
+    push: yes
