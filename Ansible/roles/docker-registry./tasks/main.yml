@@ -7,7 +7,7 @@
 - name: Push to docker hub
   docker_image:
     name: lcimage
-    repository: abbessiamine/abbessi
+    repository: abbessi/aminerepo
     tag: latest
     source: local
     push: yes
